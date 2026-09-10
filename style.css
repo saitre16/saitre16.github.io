@@ -164,11 +164,8 @@ main {
   color: var(--brass);
   margin-bottom: 14px;
 }
-
 .projects-content {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .project-placeholder {
@@ -176,8 +173,12 @@ main {
   padding-left: 16px;
 }
 
+/* Make only Tableau wider */
 .tableauPlaceholder {
-  width: 100% !important;
+  width: 80vw !important;
+  max-width: 1300px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   margin-top: 12px;
 }
 
@@ -185,11 +186,12 @@ main {
   width: 100% !important;
 }
 
-/* Projects on smaller screens */
-
+/* Smaller screens */
 @media (max-width: 880px) {
-  .projects-content {
-    width: 100%;
+  .tableauPlaceholder {
+    width: 100% !important;
+    margin-left: 0;
+    transform: none;
   }
 }
 /* Skills */
