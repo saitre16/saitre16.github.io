@@ -151,10 +151,29 @@ main {
 .entry li {
   margin-bottom: 4px;
 }
-
+/* Projects */ 
 .project-placeholder {
   border-left: 2px dashed var(--rule);
   padding-left: 16px;
+}
+ 
+/* Wide Projects row — breaks out past the normal column width */
+ 
+.row-wide {
+  grid-template-columns: 1fr;
+  row-gap: 14px;
+}
+ 
+.row-body-wide {
+  width: calc(100% + 160px);
+  margin-left: -80px;
+}
+ 
+@media (max-width: 880px) {
+  .row-body-wide {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 /* Skills */
